@@ -8,14 +8,9 @@ namespace SenseDataPump
 {
     static class Program
     {
-        // defines for commandline output
-        
-        [DllImport("kernel32.dll")]
-        static extern bool AttachConsole(int dwProcessId);
-        private const int ATTACH_PARENT_PROCESS = -1;
-
+  
         /// <summary>
-        /// The main entry point for the application.
+        /// The main entry point for the application .
         /// </summary>
         [STAThread]
         static void Main(string[] args)
