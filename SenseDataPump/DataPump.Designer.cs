@@ -61,6 +61,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.chkRulesForStreams = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -105,9 +106,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(194, 88);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.Size = new System.Drawing.Size(73, 13);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Test App";
+            this.label4.Text = "(Optional app)";
             // 
             // txtAppPath
             // 
@@ -262,7 +263,7 @@
             this.txtnumchains.Name = "txtnumchains";
             this.txtnumchains.Size = new System.Drawing.Size(40, 20);
             this.txtnumchains.TabIndex = 27;
-            this.txtnumchains.Text = "100";
+            this.txtnumchains.Text = "10";
             // 
             // txtnumusers
             // 
@@ -355,11 +356,24 @@
             this.label9.TabIndex = 39;
             this.label9.Text = "Other Settings";
             // 
+            // chkRulesForStreams
+            // 
+            this.chkRulesForStreams.AutoSize = true;
+            this.chkRulesForStreams.Checked = true;
+            this.chkRulesForStreams.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkRulesForStreams.Location = new System.Drawing.Point(197, 174);
+            this.chkRulesForStreams.Name = "chkRulesForStreams";
+            this.chkRulesForStreams.Size = new System.Drawing.Size(75, 17);
+            this.chkRulesForStreams.TabIndex = 40;
+            this.chkRulesForStreams.Text = "WithRules";
+            this.chkRulesForStreams.UseVisualStyleBackColor = true;
+            // 
             // DataPump
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 419);
+            this.Controls.Add(this.chkRulesForStreams);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -435,5 +449,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.CheckBox chkRulesForStreams;
     }
 }

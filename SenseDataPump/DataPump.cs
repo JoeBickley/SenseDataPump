@@ -50,7 +50,7 @@ namespace SenseDataPump
                 }
                 if (chkStreams.Checked)
                 {
-                    txtStatus.Text += Environment.NewLine + DataTest.addStreams(Convert.ToInt32(txtnumstreams.Text), true);
+                    txtStatus.Text += Environment.NewLine + DataTest.addStreams(Convert.ToInt32(txtnumstreams.Text), chkRulesForStreams.Checked);
                     this.Refresh();
                 }
                 if (chkTags.Checked)
